@@ -1,0 +1,392 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar */
+nav{
+  width: 100%;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 10rem;
+  overflow: hidden; */
+  border-bottom: 3px solid rgb(10, 209, 3);
+  background-color: rgb(12, 12, 122);
+  color: white;
+  margin-bottom: 0;
+}
+
+.logo-image {
+  width: 3rem;
+  padding: 0.6rem;
+  border-radius: 30%;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(248, 225, 225);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.button button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-right: 1rem;
+  margin-top: 1.4rem;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 0.4rem;
+}
+
+.links {
+  display:block;
+}
+
+.hide-links {
+  display:none;
+  transition: all 0.5s ease-in-out;
+}
+
+/* home-page */
+main {
+  margin-top: 0;
+  
+}
+
+.home-text {
+  margin: auto 3.3rem;
+}
+
+.home-text a {
+  color: rgb(236, 241, 247);
+  font-size: 0.68rem;
+  background: red;
+  padding: 0.1rem;
+  font-weight: 800;
+  display: inline-block;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.info {
+  font-size: 1rem;
+  color: rgb(197, 15, 15);
+  line-height: 2rem;
+}
+
+.mission {
+  font-size: 1.4rem;
+  color: rgb(3, 25, 126);
+  line-height: 2.35rem;
+}
+
+/* activities */
+.activities {
+  background-color: rgb(216, 224, 224);
+  margin-top: 0;
+  
+}
+
+.activities-image p {
+  position: relative;
+  bottom: 3rem;
+  color: white;
+  margin: 0 2rem;
+  background-color: rgb(8, 8, 8);
+  padding: 0.6rem;
+  border: none;
+  line-height: 1.6rem;
+  font-size: 1.3rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.activitiesList {
+  margin: 0 2.3rem;
+}
+
+.singleActivity {
+  background-color: white;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.singleActivity h3 {
+  text-align: center;
+}
+
+.singleActivity p {
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+.activities a {
+  color: blue;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  padding-bottom: 0.7rem;
+}
+
+/* about */
+.about-image p {
+  position: relative;
+  bottom: 3.4rem;
+  margin: auto 2rem;
+  background-color: rgb(231, 219, 219);
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  z-index: 1000;
+  opacity: 0.85;
+
+}
+
+.vision  {
+  margin: auto 0.6rem;
+  border-bottom: 2px red solid;
+  border-top: 2px red solid
+}
+
+.vision h3 {
+  text-transform: capitalize;
+}
+
+.vision p {
+  line-height: 1.4rem;
+}
+
+.about-us {
+  margin: auto 0.6rem;
+  line-height: 1.4rem;
+}
+
+.team-btn {
+  background: rgb(105, 86, 86);
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  color: white;
+  outline: none;
+  padding: 0.2rem;
+  cursor: pointer;
+  margin-bottom: 0.2rem;
+}
+
+.our-team {
+  background-color: whitesmoke;
+}
+
+.member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  flex-direction: column;
+}
+
+.member img {
+  border-radius: 50%;
+  border: blue;
+  display: block;
+  width: 8rem;
+  text-align: center;
+}
+
+.member h3 {
+  color: black;
+}
+
+.about a {
+  color: blue;
+  font-weight: 600;
+  text-decoration: underline;
+  display: block;
+  text-align: end;
+}
+
+/* events */
+.events h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  border-bottom: 2px orangered solid;
+  margin: 1.1rem 1rem;
+}
+
+.event {
+  margin: 0.7rem 1.1rem;
+}
+
+.event h3 {
+  color: rgb(12, 67, 112);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.event p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+.event p button {
+  color: blue;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+
+/* donate */
+.donate-image p {
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 20rem;
+  margin: auto 3rem;
+  color: rgb(207, 23, 23);
+  z-index: 999;
+  background: white;
+  padding: 0.2rem;
+  opacity: 0.6;
+}
+
+.donate h5 {
+  font-size: 1.3rem;
+  color: rgb(42, 75, 63);
+  text-align: center;
+}
+
+.donate p {
+  margin: auto 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3rem;
+}
+
+.donate a {
+  color: white;
+  background-color: black;
+  display: inline-block;
+  margin-left: 1rem;
+
+}
+
+/* membership */
+.membership {
+  margin: auto 1.8rem;
+  line-height: 1.4rem;
+  font-size: 1.05rem;
+}
+
+form {
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  margin-left: 1.5rem;
+}
+
+.form-field {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.form-field input {
+  padding: 0.2rem;
+  font-size: 1.1rem;
+  background: rgb(24, 20, 20);
+  color: white;
+
+}
+
+form button {
+  color: white;
+  background: blue;
+  border-radius: 2rem;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+form textarea {
+  margin-top: 0.5rem;
+}
+
+.back-home {
+  color: rgb(255, 255, 255);
+  background-color: #000;
+  display: inline-block;
+}
+
+/* footer */
+
+footer {
+  background-color: #333;
+  padding: auto 3rem;
+  /* margin-bottom: 0; */
+}
+
+/* .footer-container {
+  margin: auto 3rem;
+} */
+
+.get-involved {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding-top: 2rem;
+}
+
+.get-involved a {
+  text-transform: capitalize;
+  color: white;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  padding: 0.1rem;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 0.8rem;
+  color: rgb(9, 116, 209);
+  margin-bottom: 0;
+  padding: 0 2rem;
+  font-weight: 700;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 6.7rem;
+}
