@@ -19,38 +19,35 @@ const SingleEvent = (id,heading,info,fluid) => {
     )
 }
 
-const query = graphql`
-  {
-      allContentfulEvent {
-        nodes {
-          date
-          heading
-          id
-          image {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-            title
-          }
-        }
-      }
-    }
-`
+// const query = graphql`
+//   {
+//       allContentfulEvent {
+//         nodes {
+//           date
+//           heading
+//           id
+//           image {
+//             fluid {
+//               ...GatsbyImageSharpFluid
+//             }
+//             title
+//           }
+//         }
+//       }
+//     }
+// `
 
 const Events = () => {
-    const data = useStaticQuery(query)
-    console.log(data)
+    // const data = useStaticQuery(query)
+    // console.log(data)
     return (
         <>
         <Layout>
             <SEO/>
         <section className="events">
             <h5>News and events from <strong>Fair Play Off-Pitch</strong></h5>
-            {
-                data.allContentfulEvent.nodes.map(()=>{
-                    return <SingleEvent/>
-                })
-            }
+    
+            <SingleEvent/>
         </section>  
         </Layout>
         </>
