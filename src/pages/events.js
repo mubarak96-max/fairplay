@@ -11,7 +11,7 @@ const SingleEvent = () => {
     return (
         <div className="event">
             <h3>Yet Rsef Vim Nat Frei Hist Cray</h3>
-            <img src="/image-11.jpg" alt=""/>
+            <img src="/image-11.jpg" alt="" width="98%"/>
             <p>{readMore ? info : `${info.substring(0,200)}`}
                 <button onClick={()=>setReadMore(!readMore)}>{readMore ? "...show less" : "read more..."}</button>
             </p>
@@ -47,6 +47,7 @@ const Events = () => {
         <section className="events">
             <h5>News and events from <strong>Fair Play Off-Pitch</strong></h5>
     
+            <SingleEvent/>
             <SingleEvent/>
             <SingleEvent/>
             <SingleEvent/>
