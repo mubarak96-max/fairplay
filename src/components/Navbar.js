@@ -31,7 +31,6 @@ const Navbar = () => {
                     <li><Link to='/activities'>Activities</Link></li>
                     <li><Link to='/events'>News & Events</Link></li>
                     <li><Link to='/about'>About</Link></li>
-                    <li><Link to='/getInvolved'>Get Involved</Link></li>
                 </ul>
             </div>
             
