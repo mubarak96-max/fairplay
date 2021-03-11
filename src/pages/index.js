@@ -1,13 +1,14 @@
 import React from "react"
 import { Link} from "gatsby"
 import WelcomeImage from '../components/welcomeImage'
+import Slider from '../components/slider'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () =>{
    return <Layout>
-     <WelcomeImage/>
+     <Slider/>
      <main className="home">
     <SEO title="Home" />
       <div className="home-text">

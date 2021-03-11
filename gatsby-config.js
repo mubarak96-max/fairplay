@@ -15,13 +15,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: `cvqp2engtdz6`,
-        accessToken: `N0od5zSaWZygn8SRx703-MRea_lCh1TNGPGnq33Y_LU`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-contentful`,
+    //   options: {
+    //     spaceId: `cvqp2engtdz6`,
+    //     accessToken: `N0od5zSaWZygn8SRx703-MRea_lCh1TNGPGnq33Y_LU`,
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`
   ],

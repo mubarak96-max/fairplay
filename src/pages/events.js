@@ -49,7 +49,7 @@ const Events = () => {
     
             <SingleEvent/>
             <SingleEvent/>
-            <SingleEvent/>
+            <SingleEvent/> 
             <SingleEvent/>
         </section>  
         </Layout>

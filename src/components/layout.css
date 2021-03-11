@@ -8,7 +8,7 @@ body {
 }
 
 /* navbar */
-nav{
+nav {
   width: 100%;
   /* position: fixed;
   top: 0;
@@ -31,7 +31,6 @@ nav{
 .logo {
   display: inline-flex;
   align-items: center;
-
 }
 
 .navigation {
@@ -60,18 +59,33 @@ ul li {
 }
 
 .links {
-  display:block;
+  display: block;
 }
 
 .hide-links {
-  display:none;
+  display: none;
   transition: all 0.5s ease-in-out;
+}
+
+/* slider */
+.carousel-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-image img {
+  width: auto;
+  height: 100%;
 }
 
 /* home-page */
 main {
   margin-top: 0;
-  
 }
 
 .home-text {
@@ -105,7 +119,6 @@ main {
 .activities {
   background-color: rgb(216, 224, 224);
   margin-top: 0;
-  
 }
 
 .activities-image p {
@@ -164,13 +177,12 @@ main {
   font-size: 1.2rem;
   z-index: 1000;
   opacity: 0.85;
-
 }
 
-.vision  {
+.vision {
   margin: auto 0.6rem;
   border-bottom: 2px red solid;
-  border-top: 2px red solid
+  border-top: 2px red solid;
 }
 
 .vision h3 {
@@ -295,7 +307,6 @@ main {
   background-color: black;
   display: inline-block;
   margin-left: 1rem;
-
 }
 
 /* membership */
@@ -321,7 +332,6 @@ form {
   font-size: 1.1rem;
   background: rgb(24, 20, 20);
   color: white;
-
 }
 
 form button {
@@ -332,7 +342,6 @@ form button {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 form textarea {
