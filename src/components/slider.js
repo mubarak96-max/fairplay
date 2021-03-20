@@ -1,43 +1,55 @@
-import React from 'react'
-import {graphql,useStaticQuery,Link} from 'gatsby'
-import Img from 'gatsby-image'
-import Layout from "../components/layout"
+import React from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel} from 'react-responsive-carousel'
-
-const query = graphql`
-  {
-    images:allImageSharp {
-      nodes {
-        fluid (quality: 100, maxWidth: 2480){
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+import { Carousel } from "react-responsive-carousel"
+import ImageOne from "../backgroundImages/slider/image1"
+import ImageTwo from "../backgroundImages/slider/image2"
+import ImageThree from "../backgroundImages/slider/image3"
+import ImageFour from "../backgroundImages/slider/image4"
+import ImageFive from "../backgroundImages/slider/image5"
+import ImageSix from "../backgroundImages/slider/image6"
+import ImageSeven from "../backgroundImages/slider/image7"
+import ImageEight from "../backgroundImages/slider/image8"
 
 const Slider = () => {
-    const data = useStaticQuery(query)
-    console.log(data)
-    return (
-        
-            <div className="carousel-wrapper">
-                <Carousel infiniteLoop autoPlay transitionTime={2000} interval={7000} showArrows={false} showStatus={false} showIndicators={false} thumbWidth={200}>
-                    {
-                        data.images.nodes.map((image)=>{
-                            return (
-                              <div className='slider-image'>
-                                    <Img style={{height:"400px", width: '100%'}} fluid={image.fluid}></Img>
-                              </div>
-                                
-                            )
-                        })
-                    }
-                </Carousel>
-            </div>
-        
-    )
+  return (
+    <div className="carousel-wrapper">
+      <Carousel
+        infiniteLoop
+        autoPlay
+        transitionTime={500}
+        interval={5000}
+        showArrows={true}
+        showStatus={false}
+        showIndicators={true}
+        showThumbs={false}
+      >
+        <div>
+          <ImageOne />
+        </div>
+        <div>
+          <ImageTwo />
+        </div>
+        <div>
+          <ImageThree />
+        </div>
+        <div>
+          <ImageFour />
+        </div>
+        <div>
+          <ImageFive />
+        </div>
+        <div>
+          <ImageSix />
+        </div>
+        <div>
+          <ImageSeven />
+        </div>
+        <div>
+          <ImageEight />
+        </div>
+      </Carousel>
+    </div>
+  )
 }
 
 export default Slider

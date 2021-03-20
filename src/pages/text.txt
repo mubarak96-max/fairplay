@@ -3,3 +3,44 @@
 FAIR PLAY OFF PITCH is a non governmental organization and all activities are done voluntarily though resources are required to do the work. We welcome individuals and organizations willing to support the work and partners to work with.
 
 Our offices are located at Prime Village complex Natete opposite Total petrol station
+
+<p className="info">Uganda is endowed with a lot of talents. Uganda is the most youthful country on the globe and has the mass that can be powerful in the sports world. <strong>FAIRPLAY OFF PITCH</strong> brigdes the gap between sports, stakeholders and communities.</p>
+        <Link to='/about'>Learn more about FAIR PLAY OFF-PITCH</Link>
+
+
+
+        <div className="home-about">
+          <p>
+            After making a solid research for 7 months, we discovered that so
+            many talents never fulfill their potential due to lack of guidance,
+            motivation, empowerment and self belief and also we discovered that
+            so many athletes retire without having any savings or investments
+            which makes them poor despite quite big chunks of money passing
+            through their hands during glory days. And so{" "}
+            <strong>FAIR PLAY OFF-PITCH</strong> was created;
+          </p>
+          <ul>
+            <li>
+              There was need to help the independent body in assessing and
+              awarding the stakeholders basing on statistics annually.
+            </li>
+            <li>
+              The need of other interested bodies to sensitize and prepare
+              athletes for retirement
+            </li>
+            <li>
+              The need to address and encourage everyone to promote humanity
+              even further in this sector, both on and off pitch
+            </li>
+            <li>
+              There was need to bridge to gap between talent and public, most
+              especially in areas where sports is just in it's infancy
+            </li>
+            <li>
+              There was also need for other interested bodies which where
+              specifically responsible for nurturing, discovering, discovering
+              and developing the young talents as well as fighting vices
+            </li>
+          </ul>
+          <Link to="/activities">What we do...</Link>
+        </div>

@@ -8,6 +8,20 @@ body {
 }
 
 /* navbar */
+
+.button {
+  display: flex;
+  flex-direction: column;
+}
+
+.button button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-right: 1rem;
+  margin-top: 1.4rem;
+}
+
 nav {
   width: 100%;
   /* position: fixed;
@@ -16,10 +30,18 @@ nav {
   right: 0;
   margin-top: 10rem;
   overflow: hidden; */
-  border-bottom: 3px solid rgb(10, 209, 3);
-  background-color: rgb(12, 12, 122);
-  color: white;
+  background-color: white;
+  color: skyblue;
   margin-bottom: 0;
+}
+
+.sub-menu-about,
+.sub-menu-involved {
+  display: block;
+}
+
+.hide-submenu {
+  display: none;
 }
 
 .logo-image {
@@ -36,21 +58,18 @@ nav {
 .navigation {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid lightblue;
 }
 
-a {
+a,
+.link-btn {
   text-decoration: none;
-  color: rgb(248, 225, 225);
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.button button {
-  background-color: transparent;
+  color: lightblue;
+  font-size: 1rem;
+  font-weight: 700;
+  background: transparent;
   border: none;
   outline: none;
-  margin-right: 1rem;
-  margin-top: 1.4rem;
 }
 
 ul li {
@@ -69,18 +88,34 @@ ul li {
 
 /* slider */
 .carousel-wrapper {
-  width: 100%;
-  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.slider-image {
-  width: 100%;
-  height: 100%;
+.overlay {
+  background-color: rgba(59, 47, 47, 0.5);
+  min-height: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-.slider-image img {
-  width: auto;
-  height: 100%;
+.background-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  color: rgb(250, 255, 204);
+}
+
+.background-image {
+  min-height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 /* home-page */
@@ -88,25 +123,51 @@ main {
   margin-top: 0;
 }
 
-.home-text {
-  margin: auto 3.3rem;
+.home-intro {
+  background-color: rgb(241, 47, 41);
+  margin-bottom: 0;
 }
 
-.home-text a {
-  color: rgb(236, 241, 247);
-  font-size: 0.68rem;
-  background: red;
+.home-intro p {
+  color: white;
+  margin: auto 2rem;
+}
+
+.home-intro a {
+  color: blue;
+  font-size: 0.9rem;
+  background: white;
   padding: 0.1rem;
   font-weight: 800;
   display: inline-block;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0 1rem 2rem;
   text-align: center;
 }
 
-.info {
-  font-size: 1rem;
-  color: rgb(197, 15, 15);
-  line-height: 2rem;
+.impact {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.impact h3 {
+  color: rgb(14, 172, 111);
+  font-size: 1.8rem;
+  margin: 2rem;
+  font-weight: 600;
+}
+
+.impact ul li {
+  line-height: 1.9rem;
+  font-size: 1.4rem;
+  padding-top: 1.5rem;
+  list-style-type: disc;
+}
+
+.impact a {
+  color: blue;
+  margin: 0 0 1rem 1rem;
+  text-decoration: solid;
 }
 
 .mission {
@@ -116,30 +177,25 @@ main {
 }
 
 /* activities */
+
+.page-title {
+  background: linear-gradient(to right top, rgb(16, 31, 36), rgb(69, 195, 245));
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
 .activities {
   background-color: rgb(216, 224, 224);
   margin-top: 0;
 }
 
-.activities-image p {
-  position: relative;
-  bottom: 3rem;
-  color: white;
-  margin: 0 2rem;
-  background-color: rgb(8, 8, 8);
-  padding: 0.6rem;
-  border: none;
-  line-height: 1.6rem;
-  font-size: 1.3rem;
-}
-
-.intro p {
-  font-size: 1.2rem;
-  padding: 1rem;
-}
-
 .activitiesList {
-  margin: 0 2.3rem;
+  margin: 3rem 2.3rem;
 }
 
 .singleActivity {
@@ -150,11 +206,21 @@ main {
 
 .singleActivity h3 {
   text-align: center;
+  text-transform: capitalize;
 }
 
 .singleActivity p {
   text-align: center;
   line-height: 1.8rem;
+}
+
+.read-more {
+  background: none;
+  text-decoration: solid;
+  color: blue;
+  border: none;
+  outline: none;
+  font-weight: 700;
 }
 
 .activities a {
@@ -168,34 +234,44 @@ main {
 }
 
 /* about */
-.about-image p {
-  position: relative;
-  bottom: 3.4rem;
-  margin: auto 2rem;
-  background-color: rgb(231, 219, 219);
-  padding: 0.6rem;
-  font-size: 1.2rem;
-  z-index: 1000;
-  opacity: 0.85;
+
+.about-links {
+  margin: 1rem 1.6rem;
+  line-height: 1rem;
 }
 
-.vision {
+.about-links a {
+  color: blue;
+  text-decoration: solid;
+}
+
+.about-fop,
+.vision,
+.overview-info,
+.team p,
+.history {
   margin: auto 0.6rem;
-  border-bottom: 2px red solid;
-  border-top: 2px red solid;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
-.vision h3 {
+.about-fop h3,
+.team h3,
+.vision h3,
+.history h3 {
   text-transform: capitalize;
 }
 
-.vision p {
-  line-height: 1.4rem;
+.team h3 {
+  margin: 1.5rem 0.6rem;
+  font-size: 1.2rem;
+  border-top: 2px red solid;
+  padding: 0.5rem;
 }
 
-.about-us {
-  margin: auto 0.6rem;
-  line-height: 1.4rem;
+.vision {
+  border-bottom: 2px red solid;
+  border-top: 2px red solid;
 }
 
 .team-btn {
@@ -234,7 +310,16 @@ main {
 }
 
 .member h3 {
-  color: black;
+  color: rgb(4, 102, 141);
+  border: none;
+  margin-top: 0;
+}
+
+.member h4 {
+  color: rgb(56, 12, 12);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-top: 0;
 }
 
 .about a {
