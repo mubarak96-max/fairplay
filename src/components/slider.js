@@ -16,7 +16,7 @@ const Slider = () => {
       <Carousel
         infiniteLoop
         autoPlay
-        transitionTime={500}
+        transitionTime={350}
         interval={5000}
         showArrows={true}
         showStatus={false}

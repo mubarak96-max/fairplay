@@ -3,7 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   min-height: 100vh;
-  position: relative;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,24 +23,9 @@ body {
 
 nav {
   width: 100%;
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-top: 10rem;
-  overflow: hidden; */
   background-color: white;
   color: skyblue;
   margin-bottom: 0;
-}
-
-.sub-menu-about,
-.sub-menu-involved {
-  display: block;
-}
-
-.hide-submenu {
-  display: none;
 }
 
 .logo-image {
@@ -65,7 +49,7 @@ a,
 .link-btn {
   text-decoration: none;
   color: lightblue;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   background: transparent;
   border: none;
@@ -104,7 +88,7 @@ ul li {
   justify-content: center;
   align-items: center;
   padding-top: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: rgb(250, 255, 204);
 }
 
@@ -131,6 +115,8 @@ main {
 .home-intro p {
   color: white;
   margin: auto 2rem;
+  padding: 0.4rem;
+  font-size: 1.3rem;
 }
 
 .home-intro a {
@@ -152,14 +138,14 @@ main {
 
 .impact h3 {
   color: rgb(14, 172, 111);
-  font-size: 1.8rem;
-  margin: 2rem;
+  font-size: 1.6rem;
+  margin: 1rem 0 -1.4rem 2rem;
   font-weight: 600;
 }
 
 .impact ul li {
   line-height: 1.9rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding-top: 1.5rem;
   list-style-type: disc;
 }
@@ -167,11 +153,10 @@ main {
 .impact a {
   color: blue;
   margin: 0 0 1rem 1rem;
-  text-decoration: solid;
 }
 
 .mission {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: rgb(3, 25, 126);
   line-height: 2.35rem;
 }
@@ -240,9 +225,10 @@ main {
   line-height: 1rem;
 }
 
-.about-links a {
+.about-links ul li a {
   color: blue;
   text-decoration: solid;
+  display: block;
 }
 
 .about-fop,
@@ -274,21 +260,6 @@ main {
   border-top: 2px red solid;
 }
 
-.team-btn {
-  background: rgb(105, 86, 86);
-  font-size: 1.1rem;
-  border-radius: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: capitalize;
-  color: white;
-  outline: none;
-  padding: 0.2rem;
-  cursor: pointer;
-  margin-bottom: 0.2rem;
-}
-
 .our-team {
   background-color: whitesmoke;
 }
@@ -299,6 +270,7 @@ main {
   align-items: center;
   background: white;
   flex-direction: column;
+  margin-top: 1.2rem;
 }
 
 .member img {
@@ -310,9 +282,10 @@ main {
 }
 
 .member h3 {
-  color: rgb(4, 102, 141);
+  color: rgb(26, 50, 59);
   border: none;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .member h4 {
@@ -363,28 +336,17 @@ main {
 }
 
 /* donate */
-.donate-image p {
-  font-size: 1.5rem;
-  position: relative;
-  bottom: 20rem;
-  margin: auto 3rem;
-  color: rgb(207, 23, 23);
-  z-index: 999;
-  background: white;
-  padding: 0.2rem;
-  opacity: 0.6;
+.involved {
+  margin: auto 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3rem;
+  font-size: 1.05rem;
 }
 
 .donate h5 {
   font-size: 1.3rem;
   color: rgb(42, 75, 63);
   text-align: center;
-}
-
-.donate p {
-  margin: auto 1rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.3rem;
 }
 
 .donate a {
@@ -394,35 +356,28 @@ main {
   margin-left: 1rem;
 }
 
-/* membership */
-.membership {
-  margin: auto 1.8rem;
-  line-height: 1.4rem;
-  font-size: 1.05rem;
-}
-
 form {
-  padding-top: 0.2rem;
-  padding-bottom: 0.3rem;
-  margin-left: 1.5rem;
-}
-
-.form-field {
   display: flex;
-  margin-top: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.form-field input {
-  padding: 0.2rem;
-  font-size: 1.1rem;
-  background: rgb(24, 20, 20);
-  color: white;
+form input,
+textarea {
+  background: lightblue;
+  margin-bottom: 1.2rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
 }
 
 form button {
   color: white;
   background: blue;
   border-radius: 2rem;
+  border: none;
   outline: none;
   display: flex;
   justify-content: center;
@@ -447,24 +402,23 @@ footer {
   /* margin-bottom: 0; */
 }
 
-/* .footer-container {
-  margin: auto 3rem;
-} */
-
-.get-involved {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  padding-top: 2rem;
-}
-
-.get-involved a {
+.footer-links,
+.footer-contacts {
+  margin: 0.2rem 0.7rem;
   text-transform: capitalize;
   color: white;
-  margin-left: 1rem;
-  margin-top: 2rem;
-  padding: 0.1rem;
+}
+
+.footer-links a {
+  display: block;
+  margin: 0.15rem auto;
+  font-size: 0.7rem;
+  color: rgb(189, 236, 57);
+}
+
+.footer-contacts {
   font-size: 0.8rem;
-  text-decoration: underline;
+  line-height: 0.3rem;
 }
 
 .copyright {
@@ -483,4 +437,188 @@ footer {
   display: flex;
   justify-content: space-evenly;
   margin: 0 6.7rem;
+}
+
+/* media query */
+@media screen and (min-width: 820px) {
+  .button {
+    display: none;
+  }
+
+  .logo-image {
+    width: 4rem;
+    padding: 0.9rem;
+    border-radius: 40%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .hide-links {
+    display: block;
+  }
+
+  ul li {
+    display: inline-block;
+  }
+
+  a,
+  .link-btn {
+    font-size: 1.2rem;
+  }
+
+  .background-content {
+    padding-top: 9rem;
+    font-size: 2.5rem;
+  }
+
+  .background-image {
+    min-height: 100vh;
+  }
+
+  /* home-page */
+  .home-intro {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-intro p {
+    font-size: 2.5rem;
+    line-height: 3.4rem;
+  }
+
+  .impact h3 {
+    font-size: 1.9rem;
+    margin: 1.2rem 0 -1.6rem 2.2rem;
+    font-weight: 600;
+  }
+
+  .impact ul li {
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+  }
+
+  /* activities */
+
+  .activitiesList {
+    margin: 3.5rem 2.8rem;
+  }
+
+  .singleActivity {
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .singleActivity h3 {
+    font-size: 2.1rem;
+  }
+
+  .singleActivity p {
+    line-height: 2.5rem;
+    font-size: 1.7rem;
+  }
+
+  .read-more {
+    font-size: 1.7rem;
+  }
+
+  .activities a {
+    font-size: 1rem;
+  }
+
+  /* about */
+  .about-fop h3,
+  .team h3,
+  .vision h3,
+  .history h3 {
+    font-size: 2rem;
+  }
+
+  .team h3 {
+    font-size: 2rem;
+  }
+
+  .about-fop,
+  .vision,
+  .overview-info,
+  .team p,
+  .history {
+    margin: auto 0.8rem;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+  }
+
+  .about-links ul li a {
+    display: block;
+  }
+
+  .member {
+    margin-top: 1.5rem;
+  }
+
+  .member img {
+    width: 11rem;
+  }
+
+  /* get involved */
+  .involved {
+    margin: auto 1.2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+  }
+
+  .donate h5 {
+    font-size: 1.5rem;
+  }
+
+  form input,
+  textarea {
+    margin-bottom: 1.5rem;
+    padding: 0.8rem;
+  }
+
+  form button {
+    font-size: 1.6rem;
+  }
+
+  form textarea {
+    margin-top: 0.7rem;
+  }
+
+  /* footer */
+
+  footer {
+    padding: auto 4rem;
+  }
+
+  .footer-links,
+  .footer-contacts {
+    margin: 0.3.5rem 0.9rem;
+  }
+
+  .footer-links a {
+    margin: 0.3rem auto;
+    font-size: 0.95rem;
+  }
+
+  .footer-contacts {
+    font-size: 1rem;
+    line-height: 0.5rem;
+  }
+
+  .copyright p {
+    font-size: 1rem;
+
+    padding: 0 3rem;
+  }
+
+  .social-media {
+    margin: 0 8rem;
+  }
 }

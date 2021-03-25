@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const allActivities = [
   {
@@ -67,6 +68,7 @@ const Activities = () => {
   const [activities, setActivities] = useState(allActivities)
   return (
     <Layout>
+      <SEO title="Our Causes" />
       <section className="activities">
         <div className="page-title">
           <h2>our causes</h2>

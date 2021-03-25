@@ -7,12 +7,24 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     // `gatsby-transformer-json`,
-    
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `FAIR PLAY OFF-PITCH`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
     },
     // {
@@ -23,6 +35,6 @@ module.exports = {
     //   },
     // },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
   ],
 }

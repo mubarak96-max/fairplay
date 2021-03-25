@@ -53,26 +53,7 @@ const Navbar = () => {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <button
-              className="link-btn"
-              onClick={() => setShowInvolved(!showInvolved)}
-            >
-              Get Involved
-            </button>
-            <div
-              className={`${
-                showInvolved ? "sub-menu-involved" : "hide-submenu"
-              }`}
-            >
-              <ul>
-                <li>
-                  <Link to="/membership"></Link>
-                </li>
-                <li>
-                  <Link to="/donate"></Link>
-                </li>
-              </ul>
-            </div>
+            <Link to="/getInvolved">Get Involved</Link>
           </li>
         </ul>
       </div>

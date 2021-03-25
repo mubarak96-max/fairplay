@@ -8,16 +8,15 @@ import SEO from "../components/seo"
 const IndexPage = () => {
   return (
     <Layout>
+      <SEO title="Home" />
       <Slider />
       <main className="home">
-        <SEO title="Home" />
         <div className="home-intro">
           <p className="mission">
             <strong>FAIRPLAY OFF PITCH</strong> is a non-profit making
             organisation that promotes athlete values, healthier richer lives
             and reaching out to the vulnerable communities.
           </p>
-          <Link to="/overview">Learn More..</Link>
         </div>
         <div className="impact">
           <h3>Our Impact</h3>
@@ -56,13 +55,13 @@ const IndexPage = () => {
               disciplines.
             </li>
             <li>
+              <li>
+                <strong>FAIR PLAY OFF-PITCH</strong> has managed to fully fund a
+                number of young but full of potential lads on the course of
+                refereeing and sports management at Uganda Olympics Committee.
+              </li>
               It has managed to boost humanity and morals in the society through
-              various events.
-            </li>
-            <li>
-              <strong>FAIR PLAY OFF-PITCH</strong> has managed to fully fund a
-              number of young but full of potential lads on the course of
-              refereeing and sports management at Uganda Olympics Committee.
+              various events and activities.
             </li>
             <li>
               The organization has also managed to create partnerships with
@@ -72,7 +71,7 @@ const IndexPage = () => {
             <li>
               These partnerships so far have helped us secure empowerment short
               courses, opportunities and bursaries for the young talents. Adding
-              on that after earning the knowledge, member started to inspire and
+              on that after earning the knowledge, members start to inspire and
               teach the society on how one can benefit from his or her
               attributes.
             </li>
@@ -82,7 +81,7 @@ const IndexPage = () => {
               hardwork and a spirit of sportsmanship
             </li>
           </ul>
-          <Link to="/activities">What we do...</Link>
+          <Link to="/about">Learn More...</Link>
         </div>
       </main>
     </Layout>

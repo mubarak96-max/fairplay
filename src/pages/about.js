@@ -1,13 +1,15 @@
 import React from "react"
-import Img from "gatsby-image"
+
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import { FaTimes, FaArrowRight } from "react-icons/fa"
+import SEO from "../components/seo"
+
 import Team from "../components/team"
 
 const About = ({ location }) => {
   return (
     <Layout>
+      <SEO title="About" />
       <div className="page-title">
         <h3>About Us</h3>
       </div>
@@ -15,10 +17,10 @@ const About = ({ location }) => {
         <h3>Go to</h3>
         <ul>
           <li>
-            <Link to={`${location.pathname}#team`}>Management team</Link>
+            <Link to={`${location.pathname}#history`}>History</Link>
           </li>
           <li>
-            <Link to={`${location.pathname}#history`}>History</Link>
+            <Link to={`${location.pathname}#team`}>Management Team</Link>
           </li>
         </ul>
       </div>
@@ -61,9 +63,6 @@ const About = ({ location }) => {
             </p>
           </div>
         </div>
-        <div id="team">
-          <Team />
-        </div>
 
         <div className="history">
           <h3 id="history">a brief history</h3>
@@ -95,6 +94,10 @@ const About = ({ location }) => {
               days.
             </li>
           </ul>
+        </div>
+
+        <div id="team">
+          <Team />
         </div>
         <Link to="/activities">What we do...</Link>
       </main>
